@@ -20,5 +20,6 @@ productos = [a.find('div', attrs={'class':'_3wU53n'}).get_text() for a in soup.f
 precios = [a.find('div', attrs={'class':'_1vC4OE _2rQ-NK'}).get_text() for a in soup.findAll('a',href=True, attrs={'class':'_31qSD5'})]
 ratings = [a.find('div', attrs={'class':'hGSR34'}).get_text() for a in soup.findAll('a',href=True, attrs={'class':'_31qSD5'})]
 
+# Creamos archivo para almacenar los datos obtenidos
 df = pd.DataFrame({'Product Name':productos,'Price':precios,'Rating':ratings})
 df.to_csv('productos.csv', index=False, encoding='utf-8')
