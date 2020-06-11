@@ -11,5 +11,5 @@ Ejecutar el comando:
 `pip install -r requirements.txt`
 
 ## Ejecución del scraper
-Ejecutar el comando
+Ejecutar el comando  
 `python scraper.py`
