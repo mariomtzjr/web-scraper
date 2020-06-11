@@ -1,4 +1,4 @@
-# web-scraper
+# web-scraper with Selenium
 
 ## Requerimientos
 - Selenium
